@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-BR"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Vecorion Gerador de Imagens — Transforme sua ideia em imagem</title>
+<meta name="description" content="Descreva sua ideia, adicione referências e deixe o Vecorion transformar sua visão em uma imagem profissional.">
+<meta property="og:title" content="Vecorion Gerador de Imagens — Transforme sua ideia em imagem">
+<meta property="og:description" content="Descreva sua ideia, adicione referências e deixe o Vecorion transformar sua visão em uma imagem profissional.">
+<meta property="og:image" content="/public/og-image.jpg"><meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="Vecorion Gerador de Imagens">
+<meta name="twitter:description" content="Transforme sua ideia em uma imagem."><meta name="twitter:image" content="/public/og-image.jpg">
+<meta name="theme-color" content="#05080F"><link rel="icon" href="/public/favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Sora:wght@600;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg0:#05080F;--bg1:#0B111C;--bg2:#111927;--line:#1E2A3D;--t1:#fff;--t2:#A9B4C6;--ac:#22D3EE;--dg:#F87171;--out:cubic-bezier(.22,1,.36,1);box-sizing:border-box;padding-top:env(safe-area-inset-top,0)}
+*,*:before,*:after{box-sizing:inherit}html{scroll-behavior:smooth;scroll-padding-top:72px}
+body{margin:0;background:radial-gradient(70% 50% at 70% 0,#0B2A5B66,transparent),var(--bg0);color:var(--t2);font:16px/1.6 Inter,system-ui,sans-serif}
+h1,h2,h3{font-family:Sora,system-ui,sans-serif;color:var(--t1);margin:0;line-height:1.12}
+h1{font-size:clamp(1.9rem,8.4vw,4.2rem);overflow-wrap:break-word}.hero{overflow:hidden}.hero .w>*{min-width:0}h2{font-size:clamp(1.6rem,4vw,2.4rem)}
+.w{max-width:1160px;margin:0 auto;padding:0 20px}section{padding:72px 0}
+header{position:sticky;top:0;z-index:5;background:#05080Fcc;backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+header .w{display:flex;align-items:center;justify-content:space-between;height:60px}
+.brand{display:flex;gap:10px;align-items:center;color:var(--t1);font:700 1.05rem Sora,system-ui,sans-serif;text-decoration:none}
+.hm{display:none}nav{display:flex;gap:20px;align-items:center}nav a{color:var(--t2);text-decoration:none}nav a:hover{color:var(--t1)}
+.btn{font:600 1rem Sora,system-ui,sans-serif;border:0;border-radius:999px;padding:15px 28px;min-height:48px;cursor:pointer;background:var(--ac);color:#03121a;transition:transform .15s var(--out),box-shadow .15s var(--out);text-decoration:none;display:inline-block}
+.btn:hover{box-shadow:0 0 28px #22D3EE55;transform:scale(1.02)}.btn:active{transform:scale(.98)}
+.btn.s{background:0;color:var(--t1);border:1px solid var(--line)}.btn.s:hover{box-shadow:none;border-color:var(--ac)}
+:focus-visible{outline:2px solid var(--ac);outline-offset:3px}
+.hero .w{display:grid;gap:32px;align-items:center}
+@media(min-width:860px){.hero .w{grid-template-columns:1.1fr 1fr}.hm{display:inline}}
+.hero p{max-width:46ch;margin:20px 0 28px}.hero small{display:block;margin-top:14px}
+.art{width:100%;max-width:560px;margin:auto;overflow:visible}
+.tr{stroke-dasharray:1;stroke-dashoffset:0}
+.pulse{stroke-dasharray:.06 .94;animation:run 8s linear infinite}@keyframes run{to{stroke-dashoffset:-1}}
+
+.steps{display:grid;gap:16px;margin-top:28px}@media(min-width:760px){.steps{grid-template-columns:repeat(3,1fr)}}
+.steps div{border-left:2px solid var(--line);padding:4px 0 4px 16px}.steps h3{font-size:1.15rem;margin-bottom:6px}
+.gal{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:12px;margin-top:24px}
+.gal figure{margin:0;aspect-ratio:4/3;border-radius:16px;background:linear-gradient(135deg,var(--bg2),#0B2A5B88);position:relative;overflow:hidden;border:1px solid var(--line)}
+.gal img{width:100%;height:100%;object-fit:cover}.gal figcaption{position:absolute;left:10px;bottom:10px;font-size:.8rem;background:#05080Fdd;padding:4px 10px;border-radius:999px;color:var(--t1)}
+.box{max-width:720px;margin:0 auto}
+textarea,input[type=url]{width:100%;background:var(--bg1);border:1px solid var(--line);border-radius:12px;color:var(--t1);font:inherit;padding:16px}
+textarea{min-height:150px;resize:vertical}textarea:focus,input:focus{outline:0;border-color:var(--ac);box-shadow:0 0 0 4px #22D3EE22}
+.ins{display:flex;flex-wrap:wrap;gap:8px;margin:14px 0}.ins button{flex:1 1 140px;min-height:48px}
+.refs{display:flex;gap:8px;flex-wrap:wrap;margin:8px 0 20px}.ref{background:var(--bg2);border:1px solid var(--line);border-radius:16px;padding:10px 14px;font-size:.9rem;animation:in .3s var(--out)}
+.ref b{display:block;color:var(--t1);max-width:180px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.ref.e{border-color:var(--dg)}
+.ref button{background:0;border:0;color:var(--t2);cursor:pointer;font-size:1.1rem;padding:0 0 0 8px}@keyframes in{from{opacity:0;transform:translateY(8px)}}
+.err{color:var(--dg);min-height:1.5em}.center{text-align:center}
+#proc svg{width:min(320px,70vw);margin:24px auto;display:block}
+#proc .dr{stroke-dasharray:1;animation:draw 6s var(--out) infinite}@keyframes draw{0%{stroke-dashoffset:1}60%,100%{stroke-dashoffset:0}}
+#msg{transition:opacity .3s}
+#res img{max-width:100%;border-radius:16px;box-shadow:0 30px 80px #000a;animation:rev .6s var(--out)}@keyframes rev{from{filter:blur(14px);opacity:0}}
+.acts{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin:24px 0}
+details{border-bottom:1px solid var(--line);padding:14px 0}summary{color:var(--t1);cursor:pointer;min-height:44px;display:flex;align-items:center}
+footer{padding:40px 0;border-top:1px solid var(--line);font-size:.9rem}
+.scr{display:none}.scr.on{display:block}
+@media(prefers-reduced-motion:reduce){*{animation-duration:.01s!important;animation-iteration-count:1!important;transition-duration:.01s!important}}
+</style></head><body>
+<header><div class="w"><a class="brand" href="#top" aria-label="Vecorion">
+<svg width="38" height="22" viewBox="0 0 200 120" role="img" aria-label="Vecorion"><path d="M100 60C70 15 12 20 12 60s58 45 88 0c30-45 88-40 88 0s-58 45-88 0z" fill="none" stroke="#22D3EE" stroke-width="9" stroke-linecap="round"/><circle cx="148" cy="60" r="20" fill="#0B2A5B"/><path d="M138 52q8-8 14 2t-2 8-10 4-2-14z" fill="#5b7a9a"/></svg>Vecorion</a>
+<nav><a href="#como" class="hm" >Como funciona</a><a href="#exemplos" class="hm" >Exemplos</a><a class="btn" href="#criar" style="padding:10px 18px;min-height:40px">Criar minha imagem</a></nav></div></header>
+<main id="top">
+<section class="hero"><div class="w"><div><h1>SUA IDEIA.<br>TRANSFORMADA EM IMAGEM.</h1>
+<p>Descreva o que você imagina. Adicione referências se quiser. O Vecorion desenvolve a direção visual e gera sua imagem.</p>
+<a class="btn" href="#criar">CRIAR MINHA IMAGEM</a><small>Simples, incompleta ou detalhada. Qualquer ideia serve.</small></div>
+<svg class="art" viewBox="0 0 400 240" aria-hidden="true"><defs><radialGradient id="g" cx=".35" cy=".3"><stop offset="0" stop-color="#3b82c4"/><stop offset=".6" stop-color="#0B2A5B"/><stop offset="1" stop-color="#050d1f"/></radialGradient><radialGradient id="h"><stop offset="0" stop-color="#0B2A5B" stop-opacity=".6"/><stop offset="1" stop-color="#0B2A5B" stop-opacity="0"/></radialGradient></defs>
+<circle cx="300" cy="120" r="120" fill="url(#h)"/>
+<path pathLength="1" d="M200 120C150 30 24 40 24 120s126 90 176 0c50-90 176-80 176 0s-126 90-176 0z" fill="none" stroke="#22D3EE" stroke-opacity=".35" stroke-width="5"/>
+<path pathLength="1" class="pulse" d="M200 120C150 30 24 40 24 120s126 90 176 0c50-90 176-80 176 0s-126 90-176 0z" fill="none" stroke="#EAF6FF" stroke-width="6" stroke-linecap="round"/>
+<g><circle cx="300" cy="120" r="56" fill="url(#g)"/><path d="M270 100q14-18 30-6t-6 20-22 10-2-24zM310 128q14-8 20 6t-10 16-14-4z" fill="#6f8aa6" opacity=".7"/><circle cx="300" cy="120" r="58" fill="none" stroke="#22D3EE" stroke-opacity=".5" stroke-width="2"/></g></svg></div></section>
+<section id="como"><div class="w"><h2>Três passos. Só o primeiro é seu.</h2><div class="steps">
+<div><h3>1. Conte sua ideia</h3>Escreva, fale ou envie referências.</div>
+<div><h3>2. O Vecorion trabalha</h3>Nos bastidores, sua ideia ganha direção visual.</div>
+<div><h3>3. Receba sua imagem</h3>Pronta para baixar e compartilhar.</div></div></div></section>
+<section id="exemplos"><div class="w"><h2>Do que dá para criar</h2><p>Da publicidade à arquitetura, do produto ao conceito.</p>
+<div class="gal" id="gal"></div></div></section>
+<section id="criar"><div class="w box">
+<div id="s-make" class="scr on"><h2 tabindex="-1">Qual é a sua ideia?</h2>
+<label for="idea" class="sr" style="position:absolute;left:-9999px">Sua ideia</label>
+<textarea id="idea" placeholder="Conte o que você imagina. Pode ser simples, incompleto ou detalhado."></textarea>
+<small>Ex.: "um carro futurista numa cidade ao entardecer".</small>
+<div class="ins"><button class="btn s" id="bAud">Enviar áudio</button><button class="btn s" data-f="image/*">Adicionar imagem</button><button class="btn s" data-f="video/*">Adicionar vídeo</button><button class="btn s" id="bLnk">Adicionar link</button><button class="btn s" data-f="*/*">Adicionar arquivo</button></div>
+<input type="file" id="fi" hidden><div id="lnk" hidden style="margin-bottom:12px"><input type="url" id="lu" placeholder="Cole o endereço de uma referência" aria-label="Link de referência"></div>
+<div class="refs" id="refs"></div><div class="err" id="err" role="alert"></div>
+<button class="btn" id="go">CRIAR MINHA IMAGEM</button><p><small>Os arquivos que você envia são usados apenas para criar a sua imagem.</small></p></div>
+<div id="proc" class="scr center" aria-live="polite"><h2>TRANSFORMANDO SUA IDEIA EM IMAGEM</h2><p>Estamos analisando sua ideia, desenvolvendo a direção visual e preparando sua imagem.</p>
+<svg viewBox="0 0 200 120" aria-hidden="true"><path pathLength="1" class="dr" d="M100 60C70 15 12 20 12 60s58 45 88 0c30-45 88-40 88 0s-58 45-88 0z" fill="none" stroke="#22D3EE" stroke-width="6" stroke-linecap="round"/></svg>
+<p id="msg">Analisando sua ideia…</p><small>Pode levar um pouco. Você pode ficar nesta tela.</small></div>
+<div id="res" class="scr center"><h2>SUA IMAGEM ESTÁ PRONTA</h2><p><img id="out" alt="Imagem criada pelo Vecorion"></p>
+<div class="acts"><button class="btn" id="dl">BAIXAR IMAGEM</button><button class="btn s" id="sh">COMPARTILHAR</button></div>
+<div class="acts"><button class="btn s" id="rg">Gerar novamente</button><button class="btn s" id="nw">Criar outra imagem</button></div></div>
+<div id="bad" class="scr center"><h2>Não conseguimos concluir sua imagem desta vez.</h2><p>Sua ideia foi mantida. Tente novamente.</p><div class="acts"><button class="btn" id="rt">TENTAR NOVAMENTE</button><button class="btn s" id="ed">Editar minha ideia</button></div></div>
+</div></section>
+<section><div class="w box"><h2>Perguntas</h2>
+<details><summary>Preciso descrever tudo em detalhe?</summary><p>Não. Uma frase basta, e você pode adicionar referências se quiser.</p></details>
+<details><summary>Que tipos de referência posso enviar?</summary><p>Áudio, imagem, vídeo, link e arquivos, com limites de tamanho informados ao enviar.</p></details>
+<details><summary>Posso pedir texto dentro da imagem?</summary><p>Pode. Escreva o texto exatamente como quer que apareça.</p></details>
+<details><summary>Meus arquivos ficam públicos?</summary><p>Não. Eles são usados para criar a sua imagem e não são expostos em endereços públicos.</p></details>
+<details><summary>Posso tentar de novo se eu não gostar?</summary><p>Sim: gere novamente com a mesma ideia ou comece outra.</p></details></div></section></main>
+<footer><div class="w">Você traz a ideia. O Vecorion transforma.<br>Os arquivos enviados são usados apenas para processar a sua criação. © Vecorion</div></footer>
+<script>
+const $=s=>document.querySelector(s),LIM={n:6,total:4e6};let refs=[],last=null,timer,mt,anon;
+try{anon=localStorage.getItem('vid')||(localStorage.setItem('vid',crypto.randomUUID()),localStorage.getItem('vid'))}catch(e){anon=crypto.randomUUID()}
+try{$('#idea').value=localStorage.getItem('vdraft')||''}catch(e){}
+$('#idea').oninput=e=>{try{localStorage.setItem('vdraft',e.target.value)}catch(_){}}
+['Produto','Publicidade','Arquitetura','Moda','Automóvel','Gastronomia','Tecnologia','Ambiente','Conceitual'].forEach(t=>{$('#gal').insertAdjacentHTML('beforeend',`<figure style="background:linear-gradient(${(t.length*37)%360}deg,#111927,hsl(${205+(t.length*9)%30} 70% ${18+t.length%5*3}%))"><figcaption>${t}</figcaption></figure>`)});
+const show=id=>{document.querySelectorAll('.scr').forEach(e=>e.classList.toggle('on',e.id===id));const t=$('#'+id+' h2');if(t){t.tabIndex=-1;t.focus({preventScroll:true})}};
+const size=()=>refs.reduce((a,r)=>a+(r.data?r.data.length:0),0);
+function draw(){$('#refs').innerHTML='';refs.forEach((r,i)=>{const d=document.createElement('div');d.className='ref'+(r.bad?' e':'');d.innerHTML=`<b></b>${r.bad?'não foi possível adicionar':'✓ adicionada'}<button aria-label="Remover referência">×</button>`;d.querySelector('b').textContent=r.name;d.querySelector('button').onclick=()=>{refs.splice(i,1);draw()};$('#refs').append(d)})}
+function add(r){if(refs.length>=LIM.n){$('#err').textContent='Você atingiu o limite de referências. Remova uma para adicionar outra.';return}refs.push(r);draw()}
+document.querySelectorAll('[data-f]').forEach(b=>b.onclick=()=>{$('#fi').accept=b.dataset.f;$('#fi').click()});
+$('#fi').onchange=e=>{const f=e.target.files[0];e.target.value='';if(!f)return;$('#err').textContent='';
+ if(size()+f.size*1.4>LIM.total){$('#err').textContent='Esse arquivo é maior do que conseguimos processar. Tente um menor.';return}
+ const fr=new FileReader();fr.onload=()=>add({kind:f.type.split('/')[0]||'file',name:f.name,mime:f.type,data:fr.result.split(',')[1]});fr.readAsDataURL(f)};
+$('#bLnk').onclick=()=>{$('#lnk').hidden=false;$('#lu').focus()};
+$('#lu').onkeydown=e=>{if(e.key!=='Enter')return;try{const u=new URL(e.target.value);if(!/^https?:$/.test(u.protocol))throw 0;add({kind:'link',name:u.hostname,url:u.href});e.target.value='';$('#err').textContent=''}catch(_){$('#err').textContent='Esse link não parece válido. Confira o endereço.'}};
+let rec,chunks;$('#bAud').onclick=async()=>{const b=$('#bAud');
+ if(rec&&rec.state==='recording'){rec.stop();return}
+ try{const s=await navigator.mediaDevices.getUserMedia({audio:true});rec=new MediaRecorder(s);chunks=[];rec.ondataavailable=e=>chunks.push(e.data);
+ rec.onstop=()=>{s.getTracks().forEach(t=>t.stop());b.textContent='Enviar áudio';const bl=new Blob(chunks,{type:rec.mimeType});if(bl.size*1.4+size()>LIM.total){$('#err').textContent='Esse áudio é mais longo do que o permitido. Tente um trecho menor.';return}const fr=new FileReader();fr.onload=()=>add({kind:'audio',name:'gravação de áudio',mime:rec.mimeType,data:fr.result.split(',')[1]});fr.readAsDataURL(bl)};
+ rec.start();b.textContent='Gravando… toque para parar'}catch(_){$('#err').textContent='Não conseguimos acessar o microfone. Verifique a permissão do navegador.'}};
+async function send(){show('proc');const M=['Analisando sua ideia…','Desenvolvendo a direção visual…','Refinando a composição…','Preparando os detalhes…','Finalizando sua imagem…'];let i=0;$('#msg').textContent=M[0];clearInterval(mt);mt=setInterval(()=>{i=Math.min(i+1,M.length-1);$('#msg').textContent=M[i]},4000);
+ try{const r=await fetch('/api/generate',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({anon,idea:last.idea,refs:last.refs})});if(!r.ok)throw 0;const{id}=await r.json();location.hash='#/r/'+id;poll(id,Date.now(),3000)}catch(_){fail()}}
+function poll(id,t0,d){clearTimeout(timer);timer=setTimeout(async()=>{try{if(Date.now()-t0>9e5)throw 0;const r=await fetch('/api/status?id='+id);if(!r.ok)throw 0;const j=await r.json();
+ if(j.status==='done'){clearInterval(mt);$('#out').src=j.url;show('res')}else if(j.status==='failed')throw 0;else poll(id,t0,Math.min(d+300,6000))}catch(_){fail()}},d)}
+function fail(){clearInterval(mt);show('bad')}
+$('#go').onclick=()=>{const idea=$('#idea').value.trim();if(!idea&&!refs.length){$('#err').textContent='Conte sua ideia em uma frase, ou adicione uma referência.';return}$('#err').textContent='';last={idea,refs:refs.filter(r=>!r.bad)};send()};
+$('#rt').onclick=$('#rg').onclick=()=>last?send():show('s-make');
+$('#ed').onclick=()=>show('s-make');
+$('#nw').onclick=()=>{if(!confirm('Começar uma nova ideia? Sua imagem atual continua disponível pelo link.'))return;refs=[];draw();$('#idea').value='';try{localStorage.removeItem('vdraft')}catch(_){}history.replaceState(0,'','#criar');show('s-make')};
+$('#dl').onclick=async()=>{try{const b=await(await fetch($('#out').src)).blob();const a=document.createElement('a');a.href=URL.createObjectURL(b);a.download='vecorion.png';a.click()}catch(_){window.open($('#out').src,'_blank')}};
+$('#sh').onclick=async()=>{const txt='Olha a imagem que criei com o Vecorion: '+location.origin;try{const b=await(await fetch($('#out').src)).blob();const f=new File([b],'vecorion.png',{type:b.type});if(navigator.canShare&&navigator.canShare({files:[f]}))return await navigator.share({files:[f],text:txt});if(navigator.share)return await navigator.share({text:txt,url:location.origin});await navigator.clipboard.writeText(location.origin);alert('Link copiado.')}catch(e){if(e.name!=='AbortError')alert('Não foi possível compartilhar neste dispositivo.')}};
+const m=location.hash.match(/#\/r\/(.+)/);if(m){show('proc');poll(m[1],Date.now(),300);setTimeout(()=>document.getElementById('criar').scrollIntoView(),100)}
+</script></body></html>
