@@ -1,0 +1,10 @@
+const U=process.env.SUPABASE_URL,K=process.env.SUPABASE_SERVICE_ROLE_KEY;
+const H={apikey:K,Authorization:'Bearer '+K,'Content-Type':'application/json'};
+exports.insert=async(t,row)=>{const r=await fetch(`${U}/rest/v1/${t}`,{method:'POST',headers:{...H,Prefer:'return=minimal'},body:JSON.stringify(row)});if(!r.ok)throw new Error('db '+await r.text())};
+exports.update=async(t,id,row)=>{await fetch(`${U}/rest/v1/${t}?id=eq.${id}`,{method:'PATCH',headers:H,body:JSON.stringify(row)})};
+exports.get=async(t,id)=>{const r=await fetch(`${U}/rest/v1/${t}?id=eq.${id}&select=*`,{headers:H});return(await r.json())[0]};
+exports.count=async(v,since,col='anon_id')=>{const r=await fetch(`${U}/rest/v1/generation_jobs?${col}=eq.${encodeURIComponent(v)}&created_at=gte.${since}&select=id`,{headers:H});return(await r.json()).length};
+exports.put=async(path,buf,type)=>{const r=await fetch(`${U}/storage/v1/object/results/${path}`,{method:'POST',headers:{apikey:K,Authorization:'Bearer '+K,'Content-Type':type,'x-upsert':'true'},body:buf});if(!r.ok)throw new Error('storage')};
+exports.sign=async path=>{const r=await fetch(`${U}/storage/v1/object/sign/results/${path}`,{method:'POST',headers:H,body:JSON.stringify({expiresIn:3600})});const j=await r.json();return U+'/storage/v1'+j.signedURL};
+exports.read=async path=>{const r=await fetch(`${U}/storage/v1/object/results/${path}`,{headers:H});if(!r.ok)throw new Error('read');return r.json()};
+exports.del=async path=>{await fetch(`${U}/storage/v1/object/results/${path}`,{method:'DELETE',headers:H})};
